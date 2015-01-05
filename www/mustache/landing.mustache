@@ -1,0 +1,183 @@
+<header>
+  <strong>Kiko Beats</strong>
+  <small class="color theme">MAKING TECHNOLOGY</small>
+  <nav class="float right">
+    {{> partial/social}}
+  </nav>
+</header>
+
+<section class="landing">
+  <div class="row" data-flex="vertical center">
+      <img class="effect buzz-out" src={{avatar}}>
+      <h1 class="color theme">Kiko Beats</h1>
+      <hr class="divider long">
+      <p class="align center">
+        Computer Science & Software Engineer specialized in Technology of the information, but the most important thing: very passionate person who loves to making stuff in internet. I make technology.
+      </p>
+      <hr class="divider short">
+      <nav>
+        {{> partial/social}}
+      </nav>
+      <small class="more align center"><strong>scroll</strong> down to know more</small>
+  </div>
+</section>
+
+<section class="bck dark posts">
+  <div class="container wow fadeIn" data-wow-delay="0.1s">
+    <div class="row">
+      <h1 class="align center margin bottom"><strong>Last Articles</strong></h1>
+    </div>
+    <div class="row align center margin bottom">
+      I like talk about programming languages, web technologies, operating system, hack the education, open source and strong interests in clean code, algorithms, data structures, agile methodologies, testing and performance.
+    </div>
+    <div class="row">
+      {{#posts}}
+        {{> partial/post}}
+      {{/posts}}
+    </div>
+
+    <div class="row">
+      <div id="newsletter" class="box margin top" data-column="12">
+        <form action="//kikobeats.us9.list-manage.com/subscribe/post?u=3f4461718a8e6c3059ea1c95c&amp;id=9f9505ed47" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <p>Do you want to receive next posts in your email?</p>
+          <input type="email" name="EMAIL" class="inline field" id="mce-EMAIL" placeholder="your email..." required>
+          <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="primary">
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;"><input type="text" name="b_3f4461718a8e6c3059ea1c95c_9f9505ed47" tabindex="-1" value=""></div>
+        </form>
+      </div>
+  </div>
+</section>
+
+<section class="bck theme code">
+  <div class="container wow fadeIn">
+    <div class="row">
+      <h1 class="align center margin bottom"><strong>The Code</strong></h1>
+    </div>
+    <div class="row align center margin bottom">
+      At the moment, the technologies where I am more focused in are JavaScript, CoffeeScript, NodeJS, Databases, BASH, HTML5 and browser API's.
+    </div>
+    <div class="row">
+      <div data-column="4">
+        <b><h5>Libraries</h5></b>
+        <nav>
+          <a href="https://github.com/Kikobeats/aspect-ratio" target="_blank">
+            Apect Ratio
+            <span>CLI</span>
+            <span>FRONTEND</span>
+            <span>BACKEND</span>
+            <small>Get the screen aspect ratio of a device.</small>
+          </a>
+
+          <a href="https://github.com/Kikobeats/bootstrap-borderless-theme" target="_blank">
+            Borderless
+            <span>FRONTEND</span>
+            <span>DESIGN</span>
+            <small>Simple & elegant Bootstrap theme.</small>
+          </a>
+
+          <a href="https://github.com/Kikobeats/fn-partial" target="_blank">
+            Partial
+            <span>FRONTEND</span>
+            <span>BACKEND</span>
+            <small>Feel like a memory pointer. Pass a reference to a function in JavaScript.</small>
+          </a>
+
+          <a href="https://github.com/Kikobeats/port-finder" target="_blank">
+            Port Finder
+            <span>CLI</span>
+            <span>DEVOPS</span>
+            <small>Get service name for a port, get a port for a service name and free ports</small>
+          </a>
+
+          <a href="https://github.com/Kikobeats/force-require" target="_blank">
+            Force Require
+            <span>BACKEND</span>
+            <small>Ensure that a NPM dependency is resolved.</small>
+          </a>
+
+        </nav>
+      </div>
+
+      <div data-column="4">
+        <b><h5>Projects</h5></b>
+        <nav>
+          <a href="https://zombts.com" target="_blank">
+            zombts
+            <span>WEBAPP</span>
+            <span>OPEN SOURCE</span>
+            <small>Beatbox social network.</small>
+          </a>
+
+          <a href="http://github.com/sailorjs" target="_blank">
+            SailorJS
+            <span>OPEN SOURCE</span>
+            <span>BACKEND</span>
+            <small>Components in the backend.</small>
+          </a>
+
+          <a href="http://github.com/parrotjs" target="_blank">
+            ParrotJS
+            <span>OPEN SOURCE</span>
+            <span>FRONTEND</span>
+            <small>Browser features today.</small>
+          </a>
+
+          <a href="https://github.com/Kikobeats/generator-git" target="_blank">
+            Generator Git
+            <span>CLI</span>
+            <span>WORKFLOW</span>
+            <small>Create the basic scaffolding to start with a git proyect.</small>
+          </a>
+
+          <a href="https://github.com/Kikobeats/purifier" target="_blank">
+            Purifier
+            <span>CLI</span>
+            <span>WORKFLOW</span>
+            <small>If you feel that your code is ugly, you need to purify it.</small>
+          </a>
+        </nav>
+      </div>
+
+      <div data-column="4">
+        <b><h5>Resources</h5></b>
+        <nav>
+          <a href="http://kikobeats.gitbooks.io/server-sandbox/" target="_blank">
+            Server Sandbox
+            <span>BOOK</span>
+            <span>DEVOPS</span>
+            <small>First steps for the young sysadmin.</small>
+          </a>
+
+          <a href="https://github.com/Kikobeats/awesome-github" target="_blank">
+            Awesome Github
+            <span>KNOWLEDGE</span>
+            <small>A curated list of awesome GitHub secrets.</small>
+          </a>
+
+          <a href="https://github.com/Kikobeats/awesome-gif" target="_blank">
+            Awesome Gif
+            <span>KNOWLEDGE</span>
+            <small>A curated list of awesome gif's resources.</small>
+          </a>
+
+          <a href="https://speakerdeck.com/kikobeats/oauth2-and-jwt-a-token-based-approach" target="_blank">
+            OAuth2 & JWT
+            <span>BACKEND</span>
+            <span>FRONTEND</span>
+            <small>A token-based approach.</small>
+          </a>
+
+          <a href="https://speakerdeck.com/kikobeats/short-introduction-to-tdd" target="_blank">
+            TDD Introduction.
+            <span>METHODOLOGY</span>
+            <small>TDD is not dead (yet).</small>
+          </a>
+
+        </nav>
+      </div>
+    </div>
+      <h1 class="align center margin top"><a target="_blank" href="https://github.com/Kikobeats?tab=repositories"><strong>...and much, much <u class="wow bounceInDown" data-wow-delay="0.5s">more</u>.</strong></a></h1>
+  </div>
+</section>
+<footer class="align center"><small>Made with ♥ by © <strong>Kiko Beats</strong> 2015</small></footer>

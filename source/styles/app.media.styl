@@ -1,0 +1,31 @@
+@media (max-width: 480)
+  html
+    font-size                   : 55.5%
+
+body[data-screen="small"]
+  > header
+    > nav
+      display                   : none
+  > section
+    &.landing
+      .row
+        height                  : auto !important
+        > img
+          margin-top            : 5rem
+        > h1
+          font-size             : 4rem
+          margin-bottom         : 0
+        > p
+          padding               : 0 9.5%
+
+        > small
+          display               : none
+
+        > nav
+          margin-bottom         : 25px
+
+    .row #newsletter > form
+      > p
+        margin-bottom           : 18px
+      > [type="submit"]
+        padding-top             : 4px

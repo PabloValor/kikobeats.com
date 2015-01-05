@@ -1,0 +1,5 @@
+/**
+ * site
+ * @version v1.1.5
+ */
+(function(){var kikobeats;window.kikobeats=kikobeats={version:"1.1.5"},$(function(){return kikobeats.effect.resize(),$(window).on("resize",kikobeats.effect.resize),$(document).on("scroll",kikobeats.effect.scroll),(new WOW).init(),"desktop"===parrot.device.type&&$.firefly({total:180,boundary:100,fast:20,slow:1,limit:3600}),$(".post").each(function(){return $(this).hover(function(){return $(this).find("figure").toggleClass("hover"),$(this).find("figcaption").toggleClass("hover"),$(this).find("h1").toggleClass("hover")})}),console.info("Why so serious? :~)")}),kikobeats.effect=function(){var resize,scroll,_el;return _el={page:$(window),document:$(document),header:$("header"),landing:$(".landing > .row"),more:$(".landing .more")},resize=function(){return _el.landing.height($(window).height())},scroll=function(){var percent;return percent=100*_el.document.scrollTop()/_el.landing.height(),percent>10?_el.more.addClass("hide"):_el.more.removeClass("hide"),percent>68?_el.header.addClass("active"):_el.header.removeClass("active")},{resize:resize,scroll:scroll}}(kikobeats)}).call(this);

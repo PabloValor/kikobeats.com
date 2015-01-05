@@ -1,0 +1,24 @@
+environment: production
+
+# -- HTML pages ----------------------------------------------------------------
+
+www:
+  - index
+
+# -- Static resources ----------------------------------------------------------
+
+statics:
+  - url     : /assets
+    folder  : /static
+    maxage  : 86400000
+  - file    : humans.txt
+    folder  : /static
+    maxage  : 86400000
+  - file    : robots.txt
+    folder  : /static
+
+# -- CORS Properties -----------------------------------------------------------
+
+headers:
+  Access-Control-Allow-Origin: "*"
+  Access-Control-Allow-Methods: GET

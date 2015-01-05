@@ -1,0 +1,300 @@
+
+@import url("http://fonts.googleapis.com/css?family=Raleway:100,300,700")
+
+// -- CONSTANTS ----------------------------------------------------------------
+
+/* COLORS */
+
+COLOR                       = #FFF
+DARK                        = #3d3e41
+BACKGROUND                  = #edeff0
+THEME                       = lighten(#156F78, 20%)
+WHITE                       = #ecf0f1
+BORDER-RADIUS               = 4px
+
+/* FONT */
+
+FONT_FAMILY                 = "Raleway", "Helvetica Neue", "Helvetica", "sans-serif"
+FONT_SIZE                   = 1.75em
+FONT_SIZE_TINY              = 0.8rem
+FONT_SIZE_SMALL             = 0.9rem
+FONT_SIZE_NORMAL            = 1.0rem
+FONT_SIZE_BIG               = 1.2rem
+FONT_WEIGHT_THIN            = 100
+FONT_WEIGHT_NORMAL          = 300
+FONT_WEIGHT_BOLD            = 700
+
+/* DIMENSIONS */
+
+UNIT                        = 4rem
+SPACE                       = (UNIT / 4)
+
+/* ANIMATIONS */
+
+ANIMATION_DURATION          = 200ms
+ANIMATION_STEPS             = 15
+ANIMATION_EASE              = cubic-bezier(0.645, 0.045, 0.355, 1.000)
+
+// -- BASE ---------------------------------------------------------------------
+
+::selection,
+::-moz-selection
+  background: lighten(THEME, 36%);
+
+hr
+  border                  : none
+
+body
+  color                     : COLOR
+  font-size                 : FONT_SIZE
+  font-family               : FONT_FAMILY
+  a
+    color                   : COLOR
+    text-decoration         : none
+
+.divider
+  &.long
+    width        : 20%
+    margin       : 15px auto
+    border       : 1px solid rgba(255,255,255,.14)
+  &.short
+    @extend .divider.long
+    width        : 5.5%
+
+
+.box
+  border          : 1px solid THEME
+  padding         : 2rem
+
+.margin
+  &.bottom
+    margin-bottom: 50px;
+  &.top
+    margin-top: 50px;
+
+.bck
+
+  p
+    opacity: 0.5
+
+  &.theme
+    background: linear-gradient(THEME,lighten(THEME, 30%)), THEME;
+  &.dark
+    background: linear-gradient(DARK,darken(DARK, 25%)), DARK;
+  &.grey
+    background: linear-gradient(darken(BACKGROUND, 60%),darken(BACKGROUND, 65%)), darken(BACKGROUND, 60%);
+    &, & a
+      color: COLOR
+  &.black
+    background: linear-gradient(#000000,#1a232c),#000;
+
+.color
+  &.white
+    color                   : WHITE
+  &.theme
+    color                   : THEME
+
+// -- BUTTON -------------------------------------------------------------------
+
+.button, button, input[type="submit"], input[type="reset"], input[type="button"]
+  border                    : 1px solid #bbb
+  border-radius             : BORDER-RADIUS
+  &:hover, &:focus
+    color                   : #333
+    border-color            : #888
+  &.primary
+    color                   : WHITE
+    background-color        : THEME
+    border-color            : darken(THEME, 5%)
+    &:hover, &:focus
+      color                 : WHITE
+      background-color      : darken(THEME, 10%)
+      border-color          : darken(THEME, 15%)
+
+// -- FORM ---------------------------------------------------------------------
+
+input[type="email"], input[type="search"], input[type="text"], input[type="tel"],
+input[type="url"], input[type="password"], textarea, select
+  background-color          : WHITE
+  border                    : 1px solid #D1D1D1
+  border-radius             : BORDER-RADIUS
+  &:focus
+    border                  : 1px solid #33C3F0
+
+// -- TABLE --------------------------------------------------------------------
+
+table
+  th, td
+    border-bottom           : 1px solid #E1E1E1
+
+// -- CODE ---------------------------------------------------------------------
+
+code
+  background                : darken(BACKGROUND, 5%)
+  border                    : 1px solid darken(BACKGROUND, 10%)
+  border-radius             : BORDER-RADIUS
+
+
+// -- EFFECTS ------------------------------------------------------------------
+
+@-webkit-keyframes buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+@keyframes buzz-out {
+  10% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  20% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  30% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  40% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+
+  50% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  60% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  70% {
+    -webkit-transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
+  }
+
+  80% {
+    -webkit-transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
+  }
+
+  90% {
+    -webkit-transform: translateX(1px) rotate(0);
+    transform: translateX(1px) rotate(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-1px) rotate(0);
+    transform: translateX(-1px) rotate(0);
+  }
+}
+
+.effect {
+
+  /* Float */
+
+  &.float {
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+    &:hover, &:focus, &:active {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+    }
+  }
+
+  /* Grow Rotate */
+
+  &.grow-rotate {
+    display: inline-block;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+    &:hover, &:focus, &:active {
+      -webkit-transform: scale(1.1) rotate(4deg);
+      transform: scale(1.1) rotate(4deg);
+    }
+  }
+
+  /* Buzz Out */
+
+  &.buzz-out {
+    display: inline-block;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+
+    &:hover, &:focus, &:active {
+      -webkit-animation-name: buzz-out;
+      animation-name: buzz-out;
+      -webkit-animation-duration: 0.75s;
+      animation-duration: 0.75s;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      -webkit-animation-iteration-count: 1;
+      animation-iteration-count: 1;
+    }
+  }
+}
