@@ -23,11 +23,7 @@ module.exports = (zen) ->
       page   : "landing"
       avatar : gravatar.url(config.gravatar.email, {s: config.gravatar.avatar_size})
 
-    console.log config.blog.url
-
     rss config.blog.url, config.blog.max_posts,  (err, result) ->
-
-      console.log err
 
       unless err
         lastPosts = []
