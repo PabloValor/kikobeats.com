@@ -8,3 +8,7 @@ This is a fork of [soyjavi site](https://github.com/soyjavi/site) that extend it
 ## Integration
 
 Your settings for the integration are be setted in `config.yml`. Also see `www/index.coffee` file for adjust for your case of use.
+
+## License
+
+MIT © soyjavi
