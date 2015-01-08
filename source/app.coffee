@@ -1,4 +1,4 @@
-window.kikobeats = kikobeats = version: "1.1.5"
+window.kikobeats = kikobeats = version: "1.1.8"
 
 $ ->
 

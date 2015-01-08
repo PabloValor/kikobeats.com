@@ -1,17 +1,17 @@
 {
   "name": "kikobeats.com",
-  "version": "1.1.5",
+  "version": "1.1.8",
   "componentsDirectory": "dependencies/bower",
   "dependencies": {
+    "animate.css": "~3.2.0",
     "flexo": "*",
     "jQuery-FireFly": "https://github.com/Matt-Deacalion/jQuery-FireFly.git#~1.1.1",
     "jquery": "*",
     "jquery.stellar": "*",
-    "stylmethods": "*",
-    "wow": "~1.0.2",
-    "animate.css": "~3.2.0",
+    "parrot-module-device": "*",
     "parrotjs": "*",
-    "parrot-module-device": "*"
+    "stylmethods": "*",
+    "wow": "~1.0.2"
   },
   "directory": "dependencies/bower",
   "ignore": [
